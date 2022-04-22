@@ -384,18 +384,22 @@ body::-webkit-scrollbar {
     }
     .thanhphan{
         margin: 0.5rem;
-        max-width: 10rem;
-        max-height: 18rem;
+        max-width: 8rem;
+        max-height: 15rem;
         padding-top: 1rem;
     }
     .img{
-        max-width: 10rem;
+        max-width: 7rem;
     }
     .thanhphan img{
-        max-width: 8rem;
+        max-width: 6rem;
     }
     .thanhphan>h1{
         font-size: 100%;
         margin: 0px;
+    }
+    footer{
+        font-size: 50%;
+        margin-top: 2rem;
     }
 }
