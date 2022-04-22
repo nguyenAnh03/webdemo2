@@ -289,10 +289,6 @@ footer div{
 
 /* Thanh cuộn */
 
-body::-webkit-scrollbar {
-    width: 1rem;
-    /* Chiều rộng vùng chứa scrollbar */
-}
 
 /* nhiều thiết bị */
 @media screen and (max-width: 600px) {
@@ -339,6 +335,7 @@ body::-webkit-scrollbar {
         font-size: 25px;
         color: white;
         background-color: black;
+        position: relative;
     }
     .menucon .fa-solid{
         display: block;
@@ -352,7 +349,9 @@ body::-webkit-scrollbar {
         min-height: 10rem;
         font-size: 1rem;
         padding: 0px;
-        margin-left: -2rem;
+        position: absolute;
+        right: 0px;
+        border-radius: 0.5rem;
     }
     .menucon:hover #nav hr{
         width: 100%;
@@ -393,6 +392,7 @@ body::-webkit-scrollbar {
     }
     .thanhphan img{
         max-width: 6rem;
+        height: 4rem;
     }
     .thanhphan>h1{
         font-size: 100%;
