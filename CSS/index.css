@@ -1,0 +1,401 @@
+*{
+    margin: 0px;
+}
+body{
+    position: relative;
+    background-image: url("https://i0.hippopx.com/photos/230/312/917/paper-old-texture-parchment-preview.jpg");
+}
+.body>img{
+    width: 100%;
+    display: block;
+}
+hr{    
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid yellow;
+    background-color: black;
+}
+#nav{
+    height: 45px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    text-align:right;
+    z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    padding: 10px;
+    width: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menucon .fa-solid{
+    display: none;
+}
+.menulast{
+    padding-right: 40px;
+    margin-right: 40px;
+}
+
+a:hover{
+    color: black;
+    transition: linear;
+    transition: 0.4s;
+    animation: colors 1s alternate;   
+    background-color: white; 
+}
+@keyframes colors {
+    from{ color: white};
+    to{ color: yellow;}
+}
+.container{
+    margin: 10px 70px;
+    width: 89%;
+    /* height: 1200px; */
+    background-color: #180A0A;
+    /* margin: 10px auto; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    display: inline-table;
+    position: relative;
+}
+.list{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(107, 54, 156);
+}
+#thong{
+    /* position: sticky;
+    top: 0px; */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.thongbao{
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    background-color: rgb(253, 253, 253);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.contact{
+    background-color: rgba(48, 46, 46, 0.644);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5rem;
+    text-align: center;
+}
+.title{
+    color: rgb(41, 41, 33);
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.thongbao input{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 10px auto;
+}
+.nhap{
+    padding-top: 20px;
+    font-weight: bold;
+    color:rgb(14, 14, 95) ;
+    width: 400px;
+    height: 20px;
+    margin: 20px;
+}
+.thongbao hr{
+    border: 1px solid cornflowerblue;
+}
+.buton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 175px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 25px 8px 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset 0px 0px 20px rgb(85, 77, 77);
+    background-color: rgb(84, 119, 84);
+    color: white;
+}
+.buton:hover{
+    background-color: azure;
+    color: black;
+    transition: 30ms ease-in-out;
+}
+.tatdi{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 750;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    text-transform: uppercase;
+}
+.baidautien{
+    width: 65%;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 20x;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+.baidautien div{
+    margin: 10px;
+}
+.baidautien .name{
+    font-size: 18px;
+    font-style: italic;
+}
+.loichua{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #180A0A;
+}
+.noidung{
+    font-style: italic;
+    font-size: 20px;
+    color: blue;
+    text-align: justify;
+}
+.suyniem{
+    text-align: justify;
+}
+.thanhben{
+    width: 26%;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+ul{
+    padding: 15px;
+    font-size: 18px;
+}
+li{
+    border-bottom: 1px solid sandybrown;
+    list-style: none;
+    padding: 10px;
+}
+.thanhphan{
+    clear: both;
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    /* float: left; */
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    object-fit: cover;
+    display: inline-block;
+}
+.thanhphan h1{
+    font-size: 20px;
+}
+.thanhphan:hover{
+    box-shadow: inset 0px 0px 5px #333;
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+.thanhphan>h1{
+    color: #333;
+}
+.img{
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+.img img{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.thanhphan a{
+    display: block;
+    text-decoration: none;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.thanhphan button{
+    margin-top: 20px;
+    padding: 5px 35px 5px 35px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px;
+}
+.thanhphan button:hover {
+    background-color: rgb(41, 43, 36);
+    transition: background-color 1s  ;
+    color: white;
+}
+footer{
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}
+footer div{
+    color: white;
+    font-size: larger;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+/* Thanh cuộn */
+
+body::-webkit-scrollbar {
+    width: 1rem;
+    /* Chiều rộng vùng chứa scrollbar */
+}
+
+/* nhiều thiết bị */
+@media screen and (max-width: 600px) {
+    *{
+        margin: 0px;
+    }
+    .container{
+        margin: 0;
+        margin-top: 1rem;
+        min-width: 100%;
+        font-size: 100%;
+    }
+    .baidautien{
+        min-width: 80%;
+        margin: 0 auto;
+        font-size: 80%;
+    }
+    .baidautien .name{
+        font-size: 100%;
+    }
+    .noidung{
+        font-size: 100%;
+    }
+    .contact{
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    .thongbao{
+        position: absolute;
+        left: 5%;
+        top: 0.5rem;
+        width: 90%;
+        padding-bottom: 0rem;
+    }
+    #nav{
+        display: none;
+    }
+    .menucon{
+        display: block;
+        padding: 1rem 2rem;
+        line-height: 1rem;
+        height: 1rem;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+    }
+    .menucon .fa-solid{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    .menucon:hover #nav{
+        display: inline-table;
+        background-color: black;
+        max-width: 5rem;
+        min-height: 10rem;
+        font-size: 1rem;
+        padding: 0px;
+        margin-left: 3rem;
+    }
+    .menucon:hover #nav hr{
+        width: 100%;
+        transition: 1s;
+    }
+    .menucon:hover #nav a{
+        display: block;
+        min-width: 9rem;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .tieude .body{
+        height: auto;
+        margin-bottom: 0px;
+        background-color: #180A0A;
+    }
+    .tieude .body img{
+        margin: 0px;
+    }
+    .thanhben{
+        display: none;
+    }
+    .baidoc{
+        margin-top: 1rem;
+        max-width: 8rem;
+        display: grid;
+        grid-template-columns: 12rem 12rem 12rem;
+    }
+    .thanhphan{
+        margin: 0.5rem;
+        max-width: 10rem;
+        max-height: 18rem;
+        padding-top: 1rem;
+    }
+    .img{
+        max-width: 10rem;
+    }
+    .thanhphan img{
+        max-width: 8rem;
+    }
+    .thanhphan>h1{
+        font-size: 100%;
+        margin: 0px;
+    }
+}
