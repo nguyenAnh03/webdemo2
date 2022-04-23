@@ -286,23 +286,64 @@ footer div{
     font-style: italic;
     padding-top: 20px;
 }
-
+.buttonmenu{
+    display: none;
+}
 /* Thanh cuộn */
-
+.contact{
+    display: none;
+}
 
 /* nhiều thiết bị */
+@media screen and (max-width: 414px){
+    body .container{
+        margin: 0;
+        margin-top: 1rem;
+        min-width: 98%;
+        font-size: 100%;
+    }
+    body .container .baidautien{
+        min-width: 80%;
+    }
+    body .container .baidoc{
+        margin-top: 1rem;
+        max-width: 8rem;
+        display: grid;
+        grid-template-columns: 10rem 10rem;
+    }
+    .container .thanhben{
+        display: none;
+    }
+    .container .thanhphan{
+        margin: 1rem;
+        max-width: 8rem;
+        max-height: 15rem;
+        padding-top: 1rem;
+    }
+    .img{
+        max-width: 7rem;
+    }
+    .thanhphan img{
+        max-width: 6rem;
+        height: 4rem;
+    }
+    .thanhphan>h1{
+        font-size: 100%;
+        margin: 0px;
+    }
+}
 @media screen and (max-width: 600px) {
     *{
         margin: 0px;
     }
-    .container{
-        margin: 0;
+    body .container{
+        margin: 0 auto;
         margin-top: 1rem;
-        min-width: 100%;
+        min-width: 98%;
         font-size: 100%;
     }
-    .baidautien{
-        min-width: 80%;
+    .container .baidautien{
+        max-width: 70%;
         margin: 0 auto;
         font-size: 80%;
     }
@@ -375,14 +416,14 @@ footer div{
     .thanhben{
         display: none;
     }
-    .baidoc{
+    .container .baidoc{
         margin-top: 1rem;
         max-width: 8rem;
         display: grid;
-        grid-template-columns: 12rem 12rem;
+        grid-template-columns: 11rem 11rem 11rem;
     }
     .thanhphan{
-        margin: 0.5rem;
+        margin: 1rem;
         max-width: 8rem;
         max-height: 15rem;
         padding-top: 1rem;
@@ -398,8 +439,331 @@ footer div{
         font-size: 100%;
         margin: 0px;
     }
+    .buttonmenu{
+        display: block;
+        border: none;
+        font-size: 20px;
+    }
+    .buttonmenu:hover{
+        transform: rotateX(90deg);
+        transition: 0.3s;
+    }
     footer{
         font-size: 50%;
         margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact{
+        display: none;
+    }
+    body .container{
+        margin: 1.5rem;
+    }
+    #nav{
+        display: none;
+    }
+    .menucon{
+        display: block;
+        padding: 1rem 2rem;
+        line-height: 1rem;
+        height: 1rem;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        position: relative;
+    }
+    .menucon .fa-solid{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    .menucon:hover #nav{
+        display: inline-table;
+        background-color: rgba(0, 0, 0, 0.781);
+        max-width: 5rem;
+        min-height: 10rem;
+        font-size: 1rem;
+        padding: 0px;
+        position: absolute;
+        right: 0px;
+        border-radius: 0.5rem;
+    }
+    .menucon:hover #nav hr{
+        width: 100%;
+        transition: 1s;
+    }
+    .menucon:hover #nav a{
+        display: block;
+        min-width: 9rem;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .buttonmenu{
+        display: block;
+        border: none;
+        font-size: 20px;
+    }
+    .buttonmenu:hover{
+        transform: rotateX(90deg);
+        transition: 0.3s;
+    }
+    .baidautien{
+        min-width: 90%;
+        margin: 1rem;
+    }
+    .baidoc{
+        display: grid;
+        grid-template-columns: 22rem 21rem;
+    }
+    .thanhphan{
+        margin-left: 2rem;
+    }
+    .thanhben{
+        display: none;
+    }
+}
+@media screen and (max-width: 812px){
+    .container .thanhben{
+        display: none;
+    }
+    body .container{
+        margin: 2rem 1%;
+        width: 98%;
+    }
+    .container .baidautien{
+        min-width: 90%;
+        margin: 0 auto;
+    }
+    .container{
+        margin: 1.5rem;
+    }
+    #nav{
+        display: none;
+    }
+    .menucon{
+        display: block;
+        padding: 1rem 2rem;
+        line-height: 1rem;
+        height: 1rem;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        position: relative;
+    }
+    .menucon .fa-solid{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    .menucon:hover #nav{
+        display: inline-table;
+        background-color: rgba(0, 0, 0, 0.781);
+        max-width: 5rem;
+        min-height: 10rem;
+        font-size: 1rem;
+        padding: 0px;
+        position: absolute;
+        right: 0px;
+        border-radius: 0.5rem;
+    }
+    .menucon:hover #nav hr{
+        width: 100%;
+        transition: 1s;
+    }
+    .menucon:hover #nav a{
+        display: block;
+        min-width: 9rem;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .buttonmenu{
+        display: block;
+        border: none;
+        font-size: 20px;
+    }
+    .buttonmenu:hover{
+        transform: rotateX(90deg);
+        transition: 0.3s;
+    }
+    .baidautien{
+        min-width: 90%;
+        margin: 1rem;
+    }
+    .baidoc{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 22rem 22rem;
+        text-align: center;
+    }
+    .thanhphan{
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .container .thanhben{
+        display: none;
+    }
+    .container{
+        max-width: 80%;
+    }
+    #nav{
+        display: none;
+    }
+    .menucon{
+        display: block;
+        padding: 1rem 2rem;
+        line-height: 1rem;
+        height: 1rem;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+        position: relative;
+    }
+    .menucon .fa-solid{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    .menucon:hover #nav{
+        display: inline-table;
+        background-color: rgba(0, 0, 0, 0.781);
+        max-width: 5rem;
+        min-height: 10rem;
+        font-size: 1rem;
+        padding: 0px;
+        position: absolute;
+        right: 0px;
+        border-radius: 0.5rem;
+    }
+    .menucon:hover #nav hr{
+        width: 100%;
+        transition: 1s;
+    }
+    .menucon:hover #nav a{
+        display: block;
+        min-width: 9rem;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .buttonmenu{
+        display: block;
+        border: none;
+        font-size: 20px;
+    }
+    .buttonmenu:hover{
+        transform: rotateX(90deg);
+        transition: 0.3s;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        min-width: 95%;
+    }
+    .baidoc{
+        display: grid;
+        grid-template-columns: 24rem 24rem;
+        text-align: center;
+    }
+    .container .thanhben{
+        display: inline;
+        width: 20%;
+    }
+    .baidautien{
+        min-width: 70%;
+        margin-right: 5%;
+    }
+    .thanhben input{
+        width: 5rem;
+        padding: 0.2rem 2rem;
+        margin: 1rem;
+    }
+    #nav{
+        min-width: 95%;
+        text-align: center;
+    }
+    #nav a{
+        margin: 0rem;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .container{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        min-width: 95%;
+    }
+    .baidoc{
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem;
+        text-align: center;
+    }
+    .container .thanhben{
+        display: inline;
+        width: 20%;
+    }
+    .baidautien{
+        min-width: 70%;
+        margin-right: 5%;
+    }
+    .thanhben input{
+        width: 5rem;
+        padding: 0.2rem 2rem;
+        margin: 1rem;
+    }
+    #nav{
+        min-width: 95%;
+        text-align: center;
+    }
+    #nav a{
+        margin: 0rem;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1920px){
+    *{
+        font-size: 25px;
+    }
+    .noidung{
+        font-size: 25px;
+    }
+    .baidautien .name{
+        font-size: 25px;
+    }
+    .menucon #nav{
+        min-height: 60px;
+        line-height: 60px;
+    }
+    #nav a{
+        font-size: 30px;
+    }
+    .baidoc{
+        display: grid;
+        grid-template-columns: 18rem 18rem 18rem;
+        text-align: center;
+    }
+    .thanhphan{
+        margin: 2rem;
+        min-width: 15rem;
+        min-height: 20rem;
+        padding-top: 1rem;
+        font-size: 25px;
+    }
+    .img{
+        min-width: 15rem;
+    }
+    .thanhphan img{
+        min-width: 14rem;
+        max-height: 10rem;
+    }
+    .thanhphan>h1{
+        font-size: 100%;
+        margin: 0px;
+        font-size: 20px;
     }
 }
