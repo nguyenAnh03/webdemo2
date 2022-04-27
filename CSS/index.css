@@ -199,10 +199,21 @@ a:hover{
     width: 26%;
     float: right;
     position: absolute;
-    top: 20px;
+    top: 60px;
     right: 25px;
     background-color: white;
     border-radius: 10px;
+}
+input{
+    padding: 0.6rem;
+    padding-left: 1rem;
+    width: 14.65rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 1rem;
+    right: 1.6rem;
 }
 ul{
     padding: 15px;

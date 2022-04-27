@@ -7,6 +7,7 @@
     }
     body .container .baidautien{
         min-width: 80%;
+        margin-top: 2.2rem;
     }
     body .container .baidoc{
         margin-top: 1rem;
@@ -16,6 +17,12 @@
     }
     .container .thanhben{
         display: none;
+    }
+    .container input{
+        position: absolute;
+        top: 1rem;
+        left: 4.4%;
+        min-width: 83.5%;
     }
     .container .thanhphan{
         margin: 1rem;
@@ -469,3 +476,19 @@
         font-size: 20px;
     }
 } 
+@media screen and (max-width: 830px) {
+    .container input{
+        position: absolute;
+        top: 1rem;
+        left: 4.4%;
+        min-width: 83.5%;
+    }
+    .container .baidautien{
+        margin-top: 2.2rem;
+    }
+}
+@media screen and (min-width: 850px){
+    input{
+        width: 17.5%;
+    }    
+}
